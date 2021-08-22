@@ -11,11 +11,11 @@ public class HelloWorldEndpoint {
 
 	@PostMapping
 	public String helloWorld() {
-		return "Hello Yash and Warren and Svirtz and Everyone and hello WORLD !!!!";
+		return "Hello Svirtz here post mapping dev env";
 	}
 	@GetMapping
 	public String helloWorld2() {
-		return "Hello Yash and Warren and Svirtz and Everyone and hello WORLD !!!!";
+		return "Hello Svirtz here get mapping dev env";
 	}
 }
 

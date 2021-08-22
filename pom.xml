@@ -13,8 +13,10 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>yashSample</name>
 	<description>dockerTestSpring</description>
+	<packaging>jar</packaging>
 	<properties>
 		<java.version>11</java.version>
+		<packaging>war</packaging>
 	</properties>
 	<dependencies>
 		<dependency>
