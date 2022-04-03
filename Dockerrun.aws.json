@@ -1,0 +1,12 @@
+{
+    "AWSEBDockerrunVersion": "1",
+    "Image": {
+        "Name" : "152327922359.dkr.ecr.ap-south-1.amazonaws.com/yash-sample-repo:4025c64",
+        "Update":"true"
+    },
+    "Ports": [
+        {
+            "ContainerPort": "8940"
+        }
+    ]
+}
