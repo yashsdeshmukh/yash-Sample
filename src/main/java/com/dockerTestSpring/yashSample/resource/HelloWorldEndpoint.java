@@ -11,11 +11,11 @@ public class HelloWorldEndpoint {
 
 	@PostMapping
 	public String helloWorld() {
-		return "Hello Jenkins here post mapss";
+		return "Hello Jenkins here post mapss tag1";
 	}
 	@GetMapping
 	public String helloWorld2() {
-		return "Hello Jenkins here get mapss";
+		return "Hello Jenkins here get mapss tag1";
 	}
 }
 
