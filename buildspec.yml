@@ -7,6 +7,9 @@ phases:
       - echo $AWS_DEFAULT_REGION
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - echo $REPOSITORY_URI
+      - git config --global user.email "ydeshmukh0093@gmail.com"
+      - git config --global user.name "yashsdeshmukh"
+      - git config --global user.password "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"
       - git describe --tags --exact-match 2>/dev/null
       - $(git describe --tags --exact-match 2>/dev/null)
       - aws --version
