@@ -1,18 +1,14 @@
 version: 0.2
 
 phases:
-  install:
-    commands:
-      - export IMAGE_TAG="$(git describe --tags --exact-match 2>/dev/null)"
-      - echo $IMAGE_TAG
-      - git describe --tags --exact-match 2>/dev/null
-      - $(git describe --tags --exact-match 2>/dev/null)
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
       - echo $AWS_DEFAULT_REGION
       - echo $CODEBUILD_RESOLVED_SOURCE_VERSION
       - echo $REPOSITORY_URI
+      - git describe --tags --exact-match 2>/dev/null
+      - $(git describe --tags --exact-match 2>/dev/null)
       - aws --version
       - aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
