@@ -11,11 +11,11 @@ public class HelloWorldEndpoint {
 
 	@PostMapping
 	public String helloWorld() {
-		return "Hello Jenkins here post maps clarity";
+		return "Hello Jenkins here post maps clarity unicorn";
 	}
 	@GetMapping
 	public String helloWorld2() {
-		return "Hello Jenkins here get mapss clarity";
+		return "Hello Jenkins here get mapss clarity unicorn";
 	}
 }
 
