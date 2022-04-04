@@ -1,6 +1,10 @@
 version: 0.2
 
 phases:
+  install:
+    commands:
+      - export IMAGE_TAG="$(git describe --tags --exact-match 2>/dev/null)"
+      - echo $IMAGE_TAG
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
@@ -11,7 +15,6 @@ phases:
       - aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
       - REPOSITORY_URI=152327922359.dkr.ecr.ap-south-1.amazonaws.com/yash-sample-repo
-      - IMAGE_TAG=`git describe --tags --exact-match 2>/dev/null)`
   build:
     commands:
       - echo Build started on `date`
