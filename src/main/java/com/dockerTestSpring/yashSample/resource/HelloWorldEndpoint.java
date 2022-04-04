@@ -11,11 +11,11 @@ public class HelloWorldEndpoint {
 
 	@PostMapping
 	public String helloWorld() {
-		return "Hello Jenkins here post mapss commit without tag";
+		return "Hello Jenkins here post maps clarity";
 	}
 	@GetMapping
 	public String helloWorld2() {
-		return "Hello Jenkins here get mapss commit without tag";
+		return "Hello Jenkins here get mapss clarity";
 	}
 }
 
