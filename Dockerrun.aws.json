@@ -1,7 +1,7 @@
 {
     "AWSEBDockerrunVersion": "1",
     "Image": {
-        "Name" : "152327922359.dkr.ecr.ap-south-1.amazonaws.com/yash-sample-repo:v0.0.15",
+        "Name" : "152327922359.dkr.ecr.ap-south-1.amazonaws.com/yash-sample-repo:v0.0.16",
         "Update":"true"
     },
     "Ports": [
