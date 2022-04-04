@@ -9,7 +9,7 @@ phases:
       - echo $REPOSITORY_URI
       - pwd
       - git describe
-      - IMAGE_TAG = $(git describe --tags --abbrev=0)
+      - IMAGE_TAG=$(git describe --tags --abbrev=0)
       - aws --version
       - aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
