@@ -12,7 +12,6 @@ phases:
       - echo $REPOSITORY_URI
       - pwd
       - ls -a
-      - cd github.com/yashsdeshmukh/yash-Sample
       - git describe
       - IMAGE_TAG=$(git describe --tags --abbrev=0)
       - aws --version
